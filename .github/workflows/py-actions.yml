@@ -18,3 +18,9 @@ jobs:
         with:
           ignore: "E741"
           max-line-length: "100"
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: psf/black@stable
