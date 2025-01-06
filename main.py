@@ -14,7 +14,7 @@ def append_item(item, l=None):
 
 while True:
     try:
-        your_number = float(input('Enter your number: '))
+        your_number = float(input("Enter your number: "))
         print("Square root is:", calculate_square_root(your_number))
         break
     except Exception:
