@@ -1,10 +1,13 @@
-from math import *
-
-def CalculateSquareRoot (Number ):
-    return sqrt(Number )
+from math import sqrt
 
 
-def append_item(item, l = []):
+def calculate_square_root(Number):
+    return sqrt(Number)
+
+
+def append_item(item, l=None):  # noqa: E741
+    if l is None:
+        l = []  # noqa
     l.append(item)
     return l
 
@@ -12,7 +15,7 @@ def append_item(item, l = []):
 while True:
     try:
         your_number = float(input('Enter your number: '))
-        print("Square root is:", CalculateSquareRoot(your_number)) 
+        print("Square root is:", calculate_square_root(your_number))
         break
-    except:
+    except Exception:
         pass
