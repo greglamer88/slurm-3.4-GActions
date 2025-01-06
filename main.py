@@ -5,9 +5,9 @@ def calculate_square_root(Number):
     return sqrt(Number)
 
 
-def append_item(item, l=None):  # noqa: E741
+def append_item(item, l=None): 
     if l is None:
-        l = []  # noqa
+        l = []  
     l.append(item)
     return l
 
